@@ -7,14 +7,21 @@ More info in: [The Why and How to use Multi-Stage Docker Builds for Lean Product
 ## [Build docker image](https://docs.docker.com/engine/reference/commandline/build/)
 
 ```bash
-docker build -t ts-sample:multi-stage ./
+docker build -t dennisseidel/ts-sample:v1 ./
 ```
 
 ## [Run docker image](https://docs.docker.com/engine/reference/commandline/run/)
 
 ```bash
-docker run -p 80:8000 ts-sample:multi-stage
+docker run -p 80:8000 dennisseidel/ts-sample:v1
 ```
+
+## Push Image to repo
+
+```bash
+docker push dennisseidel/ts-sample:v1
+```
+
 
 ## Test connectivity
 
